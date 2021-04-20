@@ -1,0 +1,32 @@
+select max(board_num) from board;
+
+INSERT INTO web_gradle_erp.board
+(BOARD_NUM, BOARD_NAME, BOARD_PASS, BOARD_SUBJECT, BOARD_CONTENT, BOARD_FILE, BOARD_RE_REF, BOARD_RE_LEV, BOARD_RE_SEQ, BOARD_READCOUNT, BOARD_DATE)
+VALUES(1, 'ksk', '1111', 'the end', 'pm 5:00', 'test.txt', 0, 0, 0, 0, '2011-03-03');
+
+INSERT INTO web_gradle_erp.board
+(BOARD_NUM, BOARD_NAME, BOARD_PASS, BOARD_SUBJECT, BOARD_CONTENT, BOARD_FILE, BOARD_RE_REF)
+VALUES(1, 'ksk', '1111', 'the end', 'pm 5:00', 'test.txt', 0);
+
+select * from board;
+
+SELECT BOARD_NUM, BOARD_NAME, BOARD_PASS, BOARD_SUBJECT, BOARD_CONTENT, BOARD_FILE, BOARD_RE_REF, BOARD_RE_LEV, BOARD_RE_SEQ, BOARD_READCOUNT, BOARD_DATE
+  FROM board
+ order by BOARD_RE_REF desc, BOARD_RE_SEQ asc
+ limit 0, 10;
+
+SELECT BOARD_NUM, BOARD_NAME, BOARD_PASS, BOARD_SUBJECT, BOARD_CONTENT, BOARD_FILE, BOARD_RE_REF, BOARD_RE_LEV, BOARD_RE_SEQ, BOARD_READCOUNT, BOARD_DATE
+  FROM board
+ order by BOARD_RE_REF desc, BOARD_RE_SEQ asc
+ limit 10, 10;
+
+select count(*) from board;
+
+select BOARD_NUM, BOARD_NAME, BOARD_PASS, BOARD_SUBJECT, BOARD_CONTENT, BOARD_FILE, BOARD_RE_REF, BOARD_RE_LEV, BOARD_RE_SEQ, BOARD_READCOUNT, BOARD_DATE
+  from board where BOARD_NUM = 15;
+  
+update board set BOARD_READCOUNT = BOARD_READCOUNT+1 where BOARD_NUM = 20;
+
+delete from board where board_num=9;
+
+select 1 from board where board_num = 22 and board_pass='1234';

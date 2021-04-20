@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+body {
+	width: 700px;
+	margin: auto;
+}
+
+table {
+	border-collapse: collapse;
+	text-align: left;
+	line-height: 1.5;
+	height: 498px;
+	padding: 10px;
+	border: 3px solid #036;
+}
+
+h1 {
+	text-align: center;
+	padding: 30px;
+}
+
+p {
+	text-align: right;
+}
+
+table thead td {
+	padding: 10px;
+	font-weight: bold;
+	vertical-align: top;
+	color: #369;
+	border-bottom: 3px solid #036;
+}
+
+table tbody th {
+	width: 300px;
+	padding: 10px;
+	font-weight: bold;
+	vertical-align: top;
+	background: #f3f6f7;
+	border-bottom: 1px solid #ccc;
+}
+
+table td {
+	width: 100px;
+	padding: 10px;
+	vertical-align: top;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+}
+
+span {
+	color: red;
+	font-weigth: bold;
+}
+
+.pageList{text-align:center;}

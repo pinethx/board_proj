@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+body {
+	width: 700px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+	line-height: 1.5;
+	height: auto;
+	padding: 10px;
+	border: 3px solid #036;
+	width: 700px;
+}
+
+table td {
+	width: 100px;
+	padding: 10px;
+	font-weight: bold;
+	vertical-align: top;
+	color: #369;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+	padding: 30px;
+}
+
+table th {
+	width: auto;
+	padding: 10px;
+	font-weight: bold;
+	vertical-align: top;
+	border-bottom: 1px solid #ccc;
+	background: #f3f6f7;
+	text-align: left;
+}
+
+span {
+	color: red;
+	font-weigth: bold;
+}
+
+.content{
+	text-align:left;
+	font-weight: normal;
+	border-bottom: 3px solid #036;
+	border-top: 3px solid #036;
+	color: #000;
+}
+.icon {
+	text-align:center;
+}
